@@ -10,7 +10,7 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            int a, b, resultAdd, resultSub;
+            int a, b, resultAdd, resultSub, resultMul;
             Console.WriteLine("Введите первое число ");
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число ");
@@ -19,6 +19,8 @@ namespace ConsoleTest
             Console.WriteLine("{0} + {1} = {2}",a,b,resultAdd);
             resultSub = a - b;
             Console.WriteLine("{0} - {1} = {2}", a, b, resultSub);
+            resultMul = a * b;
+            Console.WriteLine("{0} * {1} = {2}", a, b, resultMul);
 
             Console.ReadKey();
         }
