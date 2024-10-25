@@ -11,7 +11,7 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             int a, b, resultAdd, resultSub, resultMul;
-            double resultSin, resultCos;
+            double resultSin, resultCos, sq;
             Console.WriteLine("Введите первое число ");
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число ");
@@ -27,6 +27,8 @@ namespace ConsoleTest
             resultCos = Math.Cos(a);
             Console.WriteLine($"Cos({a}) = {resultCos}");
 
+            sq = Math.Sqrt(a);
+            Console.WriteLine($"Sqrt({a}) = {sq}");
             Console.ReadKey();
         }
     }
